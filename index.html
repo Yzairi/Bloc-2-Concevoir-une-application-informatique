@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet IOT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--   chart-1    -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  660],
+          ['2007',  1030 ]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          colors: ['#a52714'],
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart1'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!--   chart-2  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  66],
+          ['2007',  1030]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!--   chart-3  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  66],
+          ['2007',  1030]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          colors: ['#a52714'],
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart3'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!--   chart-4  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  66],
+          ['2007',  1030]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart4'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- end chart-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-chart-line"></i></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#"><li>Historique</li></a>
+                    <a href="#"><li>Renomer les capteurs</li></a>
+                    <a href="https://www.google.com/" target="_blank"><li>Alertes</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="capteur">
+                <h2>Capteur 1</h2>
+                <div class="chart">
+                    <p>la température est :</p>
+                    <div id="curve_chart1" style=" height: 400px"></div>
+                    <p>l'humidit" est :</p>
+                    <div id="curve_chart2" style=" height: 400px"></div>
+                </div>
+            </div>
+            <div class="capteur">
+                <h2>Capteur 2</h2>
+                <div class="chart">
+                    <p>la température est :</p>
+                    <div id="curve_chart3" style=" height: 400px"></div>
+                    <p>l'humidit" est :</p>
+                    <div id="curve_chart4" style=" height: 400px"></div>
+                </div>
+            </div>
+            <div class="share">
+                <a href="https://www.google.com/">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>2022, Built ad designed by Yassin Zairi</p>
+            <a href="#"><i class="fa-brands fa-github"></i></a> 
+        </div>
+    </footer>
+</body>
+</html>
